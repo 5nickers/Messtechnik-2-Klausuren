@@ -1,0 +1,113 @@
+\input{header.tex}
+
+
+\begin{document}
+
+\maketitle
+
+Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons} Lizenz veröffentlicht.
+
+\textcolor{red}{Ich erhebe keinen Anspruch auf Vollständigkeit oder Richtigkeit. Falls ihr Fehler findet oder etwas fehlt, dann meldet euch bitte über den Emailkontakt.}
+
+\tableofcontents
+
+
+\newpage
+
+
+
+\section{Aufgabe 1}
+
+Die richtigen Antworten sind:
+
+
+\begin{center}
+	\begin{tabular}{c|c|c|c|c|c|c|c}
+		1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 
+		\hline d & a & d & c & a,d & c & / & c \\  
+	\end{tabular} 
+\end{center}
+
+
+\section{Aufgabe 2}
+
+\subsection*{a)}
+
+Wir haben eine Frequenz von $f = \frac{1}{\unit[5]{ms}} = \unit[200]{Hz}$
+
+\subsection*{b)}
+
+Die effektive Spannung können wir dann nach folgender Formel bestimmen:
+
+\begin{align*}
+	U^2 &= \frac{1}{5} \cdot \left[ 4 \cdot 20^2 + 1 \cdot \left( 40 \right)^2 \right] = \unit[3200]{\mu V^2} \\
+	\hfill \\
+	\Rightarrow U &= \unit[56,56]{\mu V}
+\end{align*}
+
+
+\subsection*{c)}
+
+Das Gleichstrommessgerät müsste $U = \frac{4 \cdot 20 - 40}{5} = \unit[8]{\mu V}$ anzeigen.
+
+
+\subsection*{d)}
+
+Das Wechselstrommessgerät zeigt nur den Wechselanteil an:
+
+\paragraph{Schritt 1}
+
+Wechselspannungseinkopplung, das macht den Gleichtaktanteil zu 0.
+
+\paragraph{Schritt 2}
+
+Gleichrichtung
+
+\paragraph{Schritt 3}
+
+arithmetischer Mittelwert $\unit[24]{\mu A}$
+
+\paragraph{Schritt 4}
+
+Multiplikation mit Formfaktor für Sinus
+
+\begin{align*}
+U_\sim = 1,11111 \cdot 24 = \unit[26,66]{\mu V}
+\end{align*}
+
+
+\section{Aufgabe 3}
+
+\subsection*{a)}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{A3_1.jpg}
+\end{figure}
+
+
+\subsection*{b)}
+
+\begin{align*}
+I_1 &= \frac{U_0}{R + \Delta R - \Delta R + R} = \frac{U_0}{2R} = I_2
+\intertext{Wir betrachten nun die Masche I:}
+0 &= I(R - \Delta R) + U_B - I(R + \Delta R) \\
+\Leftrightarrow 0 &= \frac{U_0}{2R} \cdot R - \frac{U_0}{2R} \cdot \Delta R + U_B - \frac{U_0}{2R} \cdot R - \frac{U_0}{2R} \cdot \Delta R \\
+\Leftrightarrow U_B &= \frac{\Delta R}{R} \cdot U_0
+\end{align*}
+
+
+\subsection*{c)}
+
+\begin{align*}
+\frac{\Delta R}{R} &= k \cdot \epsilon \\
+\Leftrightarrow U_B &= k \cdot \epsilon \cdot U_O 
+\intertext{Für die Empfindlichkeit müssen wir nach $\epsilon$ ableiten:}
+E &= \frac{\p U_B}{\p \epsilon} = k \cdot U_0 = 2 \cdot 24 = \unit[48]{V}
+\end{align*}
+
+
+
+
+\end{document}
