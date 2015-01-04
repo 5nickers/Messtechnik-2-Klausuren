@@ -108,6 +108,41 @@ E &= \frac{\p U_B}{\p \epsilon} = k \cdot U_0 = 2 \cdot 24 = \unit[48]{V}
 \end{align*}
 
 
+\section{Aufgabe 4}
+
+\subsection*{a)}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{A4_1.jpg}
+	\caption{$U_1 = \unit[51,875]{mV}, U_2 = \unit[900]{mV}, R_1 = \unit[10]{k \Omega}$}	
+\end{figure}
+
+Mir ist allerdings nicht klar was man mit dem Biasstrom macht.
+
+\subsection*{b)}
+
+Zuerst bestimmen wir den Widerstand $R_2$:
+
+\begin{align*}
+\frac{R_2}{R_1} &= \frac{U_2}{U_1} \\
+\Leftrightarrow R_2 &= \frac{900}{51,875} \cdot 10 = \unit[173,5]{k \Omega}
+\intertext{Wir wissen, das bei der Grenzfrequenz die Verstärkung 1 ist. Darüber können wir nun die Kapazität $C_2$ ausrechnen:}
+V &= \frac{R_2}{R_1} \cdot \frac{1}{1 + j \omega R_2 C_2} = 1 \\
+\Leftrightarrow \frac{R_2}{R_1} - 1 &= j \omega R_2 C_2 \\
+\Leftrightarrow C_2 &= \frac{\frac{R_2}{R_1} - 1}{\omega R_2} = \frac{\frac{173500}{10000} - 1}{2\pi \cdot 0,5 \cdot 173500} = \unit[30]{\mu F}
+\end{align*}
+
+\subsection*{c)}
+
+Wir setzen in die Formel von b) ein:
+
+\begin{align*}
+V &= \frac{R_2}{R_1} \cdot \frac{1}{1 + j \omega R_2 C_2} = \frac{173500}{10000} \cdot \frac{1}{1 + 2 \pi \cdot 50 \cdot 173500 \cdot 30 \cdot 10^{-6}} \approx 1,01
+\end{align*}
+
+
+
 
 
 \end{document}
